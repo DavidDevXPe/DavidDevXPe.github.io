@@ -1,0 +1,47 @@
+# Imágenes fuente sin optimizar (el sitio usa las versiones WebP)
+/images/originals/
+
+# Dependencias y resultados de compilación
+/node_modules/
+/dist/
+/build/
+/coverage/
+/.cache/
+/.vite/
+
+# Configuración local de servicios de despliegue
+/.vercel/
+/.netlify/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Editores e IDE
+/.vscode/
+/.idea/
+*.code-workspace
+
+# Configuración local de asistentes de desarrollo
+/.codex/
+/.copilot/
+/.claude/
+/.quokka/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Registros, copias y archivos temporales
+*.log
+*.tmp
+*.temp
+*.bak
+*~
+
+# Recursos temporales usados para comprobaciones y capturas
+/.chrome-*/
+/.portfolio-*.png
+/capture-*.mjs
