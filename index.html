@@ -66,6 +66,22 @@
                 </div>
 
                 <div class="hero-visual reveal" aria-label="Presentación visual de DavidDevX">
+                    <svg class="hero-circuit" aria-hidden="true">
+                        <defs>
+                            <pattern id="hero-circuit-pattern" width="72" height="72" patternUnits="userSpaceOnUse">
+                                <path d="M0 36 H24 V12 H72" fill="none" stroke="#00b8ff" stroke-width="1" stroke-opacity="0.16" />
+                                <path d="M24 36 V60 H72" fill="none" stroke="#00e5c3" stroke-width="1" stroke-opacity="0.13" />
+                                <circle cx="24" cy="36" r="2.2" fill="#00b8ff" fill-opacity="0.4" />
+                                <circle cx="24" cy="12" r="1.6" fill="#00e5c3" fill-opacity="0.35" />
+                                <circle cx="24" cy="60" r="1.6" fill="#00e5c3" fill-opacity="0.3" />
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#hero-circuit-pattern)" />
+                    </svg>
+                    <svg class="hero-watermark" aria-hidden="true" viewBox="0 0 100 100">
+                        <polygon points="50,4 92,27 92,73 50,96 8,73 8,27" fill="none" stroke="currentColor" stroke-width="1.6" />
+                        <text x="50" y="60" text-anchor="middle" font-family="monospace" font-size="30" font-weight="800" fill="currentColor">DX</text>
+                    </svg>
                     <div class="glow glow-one"></div>
                     <div class="glow glow-two"></div>
                     <div class="code-card">

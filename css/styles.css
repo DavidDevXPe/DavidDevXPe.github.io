@@ -431,6 +431,28 @@ h3 {
     box-shadow: 0 0 20px var(--cyan), -440px 270px 0 var(--blue), -440px 270px 18px var(--blue);
 }
 
+.hero-circuit {
+    position: absolute;
+    inset: -10% -10%;
+    width: 120%;
+    height: 120%;
+    opacity: 0.55;
+    mask-image: radial-gradient(circle at 62% 40%, black, transparent 70%);
+    -webkit-mask-image: radial-gradient(circle at 62% 40%, black, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-watermark {
+    position: absolute;
+    right: -60px;
+    bottom: -80px;
+    width: 380px;
+    height: 380px;
+    opacity: 0.05;
+    color: var(--sky);
+    pointer-events: none;
+}
+
 .glow {
     position: absolute;
     border-radius: 50%;
