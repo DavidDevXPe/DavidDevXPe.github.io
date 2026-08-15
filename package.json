@@ -1,0 +1,21 @@
+{
+  "name": "daviddevx-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portafolio profesional de David Castillo bajo la marca DavidDevX.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/validate-project.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidDevXPe/DavidDevXPe.github.io.git"
+  },
+  "homepage": "https://daviddevxpe.github.io/",
+  "author": "David Castillo",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,26 +1,75 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.documentElement.classList.replace('no-js', 'js');</script>
     <meta name="theme-color" content="#07111f">
-    <meta name="description" content="Portafolio de David Castillo, desarrollador full stack bajo la marca DavidDevX.">
+    <meta name="description" content="Portafolio de David Castillo (DavidDevX), desarrollador web full stack en formación con proyectos en React, JavaScript y Node.js.">
     <meta name="author" content="David Castillo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://daviddevxpe.github.io/">
     <meta property="og:title" content="DavidDevX | Desarrollador Full Stack">
     <meta property="og:description" content="Desarrollando el futuro, una línea de código a la vez.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://daviddevx.com/images/og-image.png">
+    <meta property="og:url" content="https://daviddevxpe.github.io/">
+    <meta property="og:site_name" content="DavidDevX">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:image" content="https://daviddevxpe.github.io/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="DavidDevX — Desarrollador Full Stack">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DavidDevX | Desarrollador Full Stack">
     <meta name="twitter:description" content="Desarrollando el futuro, una línea de código a la vez.">
-    <meta name="twitter:image" content="https://daviddevx.com/images/og-image.png">
+    <meta name="twitter:image" content="https://daviddevxpe.github.io/images/og-image.png">
+    <meta name="twitter:image:alt" content="DavidDevX — Desarrollador Full Stack">
     <title>DavidDevX | Desarrollador Full Stack</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://daviddevxpe.github.io/#person",
+                    "name": "David Castillo",
+                    "alternateName": "DavidDevX",
+                    "url": "https://daviddevxpe.github.io/",
+                    "email": "mailto:hectordavidcastillobailon@gmail.com",
+                    "jobTitle": "Desarrollador web full stack en formación",
+                    "alumniOf": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "Universidad Nacional de Frontera"
+                    },
+                    "knowsAbout": [
+                        "HTML5",
+                        "CSS3",
+                        "JavaScript",
+                        "React",
+                        "Node.js",
+                        "PostgreSQL"
+                    ],
+                    "sameAs": [
+                        "https://github.com/DavidDevXPe"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://daviddevxpe.github.io/#website",
+                    "url": "https://daviddevxpe.github.io/",
+                    "name": "DavidDevX",
+                    "description": "Portafolio profesional de David Castillo.",
+                    "inLanguage": "es-PE",
+                    "author": {
+                        "@id": "https://daviddevxpe.github.io/#person"
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body>
@@ -33,7 +82,7 @@
             </a>
 
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-                <span class="sr-only">Abrir menú</span>
+                <span class="sr-only" data-menu-label>Abrir menú</span>
                 <span></span><span></span><span></span>
             </button>
 
@@ -214,7 +263,7 @@
                             <div class="project-actions">
                                 <a class="project-link primary" href="https://pokedex-app-mu-livid.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span aria-hidden="true">↗</span></a>
                                 <a class="project-link" href="https://github.com/DavidDevXPe/pokedex_app" target="_blank" rel="noreferrer">Código <span aria-hidden="true">↗</span></a>
-                                <button class="project-link details-button" type="button" data-dialog-open="pokedex-dialog">Detalles</button>
+                                <button class="project-link details-button" type="button" data-dialog-open="pokedex-dialog">Ver caso</button>
                             </div>
                         </div>
                     </article>
@@ -233,7 +282,7 @@
                             <div class="project-actions">
                                 <a class="project-link primary" href="https://rick-and-morty-app-phi-green.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span aria-hidden="true">↗</span></a>
                                 <a class="project-link" href="https://github.com/DavidDevXPe/Rick-and-Morty---App" target="_blank" rel="noreferrer">Código <span aria-hidden="true">↗</span></a>
-                                <button class="project-link details-button" type="button" data-dialog-open="rick-dialog">Detalles</button>
+                                <button class="project-link details-button" type="button" data-dialog-open="rick-dialog">Ver caso</button>
                             </div>
                         </div>
                     </article>
@@ -252,7 +301,7 @@
                             <div class="project-actions">
                                 <a class="project-link primary" href="https://weather-clima.vercel.app/" target="_blank" rel="noreferrer">Ver demo <span aria-hidden="true">↗</span></a>
                                 <a class="project-link" href="https://github.com/DavidDevXPe/App-Clima" target="_blank" rel="noreferrer">Código <span aria-hidden="true">↗</span></a>
-                                <button class="project-link details-button" type="button" data-dialog-open="weather-dialog">Detalles</button>
+                                <button class="project-link details-button" type="button" data-dialog-open="weather-dialog">Ver caso</button>
                             </div>
                         </div>
                     </article>
@@ -265,7 +314,7 @@
 
                     <div class="dialog-heading">
                         <div>
-                            <p class="section-index">PROYECTO 01 / PUBLICADO</p>
+                            <p class="section-index">CASO DE ESTUDIO 01 / PUBLICADO</p>
                             <h2 id="pokedex-dialog-title">Pokédex App</h2>
                         </div>
                         <div class="dialog-actions">
@@ -306,24 +355,51 @@
                         </div>
                     </div>
 
-                    <div class="dialog-info-grid">
-                        <section>
-                            <span class="dialog-label">El proyecto</span>
-                            <p>Aplicación web interactiva inspirada en Pokémon que permite al usuario ingresar como entrenador, consultar Pokémon, realizar búsquedas por nombre, filtrar por tipo y navegar entre los resultados mediante paginación.</p>
-                            <p>Consume información de PokeAPI y muestra datos como tipo, HP, ataque, defensa, ataque especial, defensa especial y velocidad.</p>
+                    <div class="case-study-meta" aria-label="Resumen del proyecto Pokédex App">
+                        <div><span>Tipo</span><strong>Aplicación frontend</strong></div>
+                        <div><span>Fuente de datos</span><strong>PokeAPI</strong></div>
+                        <div><span>Publicación</span><strong>Vercel</strong></div>
+                    </div>
+
+                    <div class="case-study-grid">
+                        <section class="case-study-card">
+                            <span class="case-study-number">01 / OBJETIVO</span>
+                            <h3>Simplificar la exploración de Pokémon</h3>
+                            <p>Crear una experiencia de consulta que permitiera encontrar información de Pokémon sin recorrer manualmente todos los resultados disponibles en PokeAPI.</p>
                         </section>
-                        <section>
-                            <span class="dialog-label">Lo que aprendí</span>
-                            <p>Aquí el diseño me costó tanto como la lógica: acomodar los datos de cada Pokémon en tarjetas legibles, sin que la información se viera apretada, me tomó más iteraciones que el propio filtro o la paginación.</p>
-                            <p>También reforcé el consumo de APIs REST con Axios, el manejo de estado global con Redux Toolkit, la navegación con React Router y el despliegue frontend en Vercel.</p>
+                        <section class="case-study-card">
+                            <span class="case-study-number">02 / SOLUCIÓN</span>
+                            <h3>Un flujo de consulta completo</h3>
+                            <p>La aplicación combina ingreso como entrenador, búsqueda por nombre, filtro por tipo y paginación. Cada tarjeta presenta el tipo y las seis estadísticas principales del Pokémon.</p>
                         </section>
+                        <section class="case-study-card">
+                            <span class="case-study-number">03 / IMPLEMENTACIÓN</span>
+                            <h3>Estado, navegación y datos separados</h3>
+                            <p>Construí la interfaz con componentes reutilizables en React, utilicé Redux Toolkit y React Redux para el estado global, React Router para las vistas y Axios para consumir PokeAPI.</p>
+                        </section>
+                        <section class="case-study-card">
+                            <span class="case-study-number">04 / DESAFÍO</span>
+                            <h3>Coordinar datos asíncronos y controles</h3>
+                            <p>El reto fue mantener coordinadas la búsqueda, el filtrado y la paginación, mientras transformaba la respuesta de la API en tarjetas consistentes y fáciles de consultar.</p>
+                        </section>
+                    </div>
+
+                    <div class="case-study-result">
+                        <div>
+                            <span class="dialog-label">Resultado</span>
+                            <p>Aplicación frontend publicada en Vercel, con una demo funcional y el código fuente disponible públicamente en GitHub.</p>
+                        </div>
+                        <span class="case-result-status"><i aria-hidden="true"></i> Demo y código disponibles</span>
                     </div>
 
                     <div class="dialog-stack">
                         <span class="dialog-label">Tecnologías</span>
-                        <ul class="tags">
-                            <li>React</li><li>JavaScript</li><li>Vite</li><li>CSS</li><li>Redux Toolkit</li><li>React Redux</li><li>React Router</li><li>Axios</li><li>PokeAPI</li><li>Vercel</li>
-                        </ul>
+                        <div class="dialog-stack-groups">
+                            <div class="stack-group"><span>Interfaz</span><ul class="tags"><li>React</li><li>JavaScript</li><li>Vite</li><li>CSS</li></ul></div>
+                            <div class="stack-group"><span>Estado y navegación</span><ul class="tags"><li>Redux Toolkit</li><li>React Redux</li><li>React Router</li></ul></div>
+                            <div class="stack-group"><span>Integración</span><ul class="tags"><li>Axios</li><li>PokeAPI</li></ul></div>
+                            <div class="stack-group"><span>Despliegue</span><ul class="tags"><li>Vercel</li></ul></div>
+                        </div>
                     </div>
                 </div>
             </dialog>
@@ -334,7 +410,7 @@
 
                     <div class="dialog-heading">
                         <div>
-                            <p class="section-index">PROYECTO 02 / PUBLICADO</p>
+                            <p class="section-index">CASO DE ESTUDIO 02 / PUBLICADO</p>
                             <h2 id="rick-dialog-title">Rick and Morty App</h2>
                         </div>
                         <div class="dialog-actions">
@@ -350,24 +426,51 @@
                         </figure>
                     </div>
 
-                    <div class="dialog-info-grid">
-                        <section>
-                            <span class="dialog-label">El proyecto</span>
-                            <p>Aplicación web desarrollada con React que consume la Rick and Morty API para consultar ubicaciones del universo de la serie y visualizar los personajes que habitan en cada una.</p>
-                            <p>Permite buscar ubicaciones por identificador y muestra su nombre, tipo, dimensión y número de residentes. Cada personaje incluye imagen, estado, especie, origen y cantidad de episodios.</p>
+                    <div class="case-study-meta" aria-label="Resumen del proyecto Rick and Morty App">
+                        <div><span>Tipo</span><strong>Aplicación frontend</strong></div>
+                        <div><span>Fuente de datos</span><strong>Rick and Morty API</strong></div>
+                        <div><span>Publicación</span><strong>Vercel</strong></div>
+                    </div>
+
+                    <div class="case-study-grid">
+                        <section class="case-study-card">
+                            <span class="case-study-number">01 / OBJETIVO</span>
+                            <h3>Relacionar ubicaciones y residentes</h3>
+                            <p>Facilitar la exploración de las ubicaciones del universo de Rick and Morty y de los personajes asociados a cada una mediante una consulta directa.</p>
                         </section>
-                        <section>
-                            <span class="dialog-label">Lo que aprendí</span>
-                            <p>Este proyecto marcó el punto donde los hooks dejaron de ser un obstáculo: construí un custom hook para manejar las peticiones y los estados de carga y error, algo que al inicio de mi formación me costaba entender.</p>
-                            <p>También practiqué useState, useEffect, useRef, el consumo de APIs REST con Axios, paginación de datos externos y despliegue en Vercel.</p>
+                        <section class="case-study-card">
+                            <span class="case-study-number">02 / SOLUCIÓN</span>
+                            <h3>Información contextual en una sola vista</h3>
+                            <p>El usuario consulta una ubicación por identificador y obtiene su nombre, tipo, dimensión y residentes. Los personajes se presentan en tarjetas y se organizan mediante paginación.</p>
                         </section>
+                        <section class="case-study-card">
+                            <span class="case-study-number">03 / IMPLEMENTACIÓN</span>
+                            <h3>Lógica asíncrona reutilizable</h3>
+                            <p>Construí la interfaz con React y Axios. Encapsulé las peticiones y los estados de carga y error en un custom hook, apoyándome en useState, useEffect y useRef para controlar la interacción.</p>
+                        </section>
+                        <section class="case-study-card">
+                            <span class="case-study-number">04 / DESAFÍO</span>
+                            <h3>Organizar conjuntos variables de residentes</h3>
+                            <p>El reto fue coordinar el ciclo de las peticiones asíncronas, reutilizar la lógica de consulta y presentar cantidades distintas de personajes sin perder claridad en la navegación.</p>
+                        </section>
+                    </div>
+
+                    <div class="case-study-result">
+                        <div>
+                            <span class="dialog-label">Resultado</span>
+                            <p>Aplicación frontend publicada en Vercel, con una demo funcional y el repositorio disponible públicamente en GitHub.</p>
+                        </div>
+                        <span class="case-result-status"><i aria-hidden="true"></i> Demo y código disponibles</span>
                     </div>
 
                     <div class="dialog-stack">
                         <span class="dialog-label">Tecnologías</span>
-                        <ul class="tags">
-                            <li>React</li><li>JavaScript</li><li>Vite</li><li>CSS</li><li>Axios</li><li>Rick and Morty API</li><li>Vercel</li>
-                        </ul>
+                        <div class="dialog-stack-groups">
+                            <div class="stack-group"><span>Interfaz</span><ul class="tags"><li>React</li><li>JavaScript</li><li>Vite</li><li>CSS</li></ul></div>
+                            <div class="stack-group"><span>Lógica</span><ul class="tags"><li>Custom Hook</li><li>React Hooks</li></ul></div>
+                            <div class="stack-group"><span>Integración</span><ul class="tags"><li>Axios</li><li>Rick and Morty API</li></ul></div>
+                            <div class="stack-group"><span>Despliegue</span><ul class="tags"><li>Vercel</li></ul></div>
+                        </div>
                     </div>
                 </div>
             </dialog>
@@ -378,7 +481,7 @@
 
                     <div class="dialog-heading">
                         <div>
-                            <p class="section-index">PROYECTO 03 / PUBLICADO</p>
+                            <p class="section-index">CASO DE ESTUDIO 03 / PUBLICADO</p>
                             <h2 id="weather-dialog-title">Weather App</h2>
                         </div>
                         <div class="dialog-actions">
@@ -394,24 +497,51 @@
                         </figure>
                     </div>
 
-                    <div class="dialog-info-grid">
-                        <section>
-                            <span class="dialog-label">El proyecto</span>
-                            <p>Aplicación web del clima desarrollada con React que utiliza la ubicación actual del usuario mediante la geolocalización del navegador para consultar información meteorológica en tiempo real.</p>
-                            <p>Consume OpenWeatherMap y muestra ciudad, país, descripción, temperatura, viento, nubosidad, presión y humedad. También permite cambiar entre grados Celsius y Fahrenheit.</p>
+                    <div class="case-study-meta" aria-label="Resumen del proyecto Weather App">
+                        <div><span>Tipo</span><strong>Aplicación frontend</strong></div>
+                        <div><span>Fuente de datos</span><strong>OpenWeatherMap</strong></div>
+                        <div><span>Publicación</span><strong>Vercel</strong></div>
+                    </div>
+
+                    <div class="case-study-grid">
+                        <section class="case-study-card">
+                            <span class="case-study-number">01 / OBJETIVO</span>
+                            <h3>Convertir una ubicación en información útil</h3>
+                            <p>Transformar las coordenadas actuales del usuario en una consulta meteorológica clara, con los datos principales reunidos en una sola interfaz.</p>
                         </section>
-                        <section>
-                            <span class="dialog-label">Lo que aprendí</span>
-                            <p>La parte más entretenida fue trabajar con datos del mundo real: pedir la ubicación al navegador mediante la Geolocation API y convertir la temperatura que devuelve OpenWeatherMap (en Kelvin) a Celsius y Fahrenheit.</p>
-                            <p>Además practiqué el consumo de APIs REST con Axios, useState y useEffect, y el despliegue en Vercel.</p>
+                        <section class="case-study-card">
+                            <span class="case-study-number">02 / SOLUCIÓN</span>
+                            <h3>Condiciones actuales y cambio de unidad</h3>
+                            <p>La aplicación muestra ciudad, país, descripción, temperatura, viento, nubosidad, presión y humedad. También permite alternar la temperatura entre Celsius y Fahrenheit.</p>
                         </section>
+                        <section class="case-study-card">
+                            <span class="case-study-number">03 / IMPLEMENTACIÓN</span>
+                            <h3>Dos procesos asíncronos conectados</h3>
+                            <p>Utilicé la Geolocation API para obtener coordenadas, Axios para consultar OpenWeatherMap y useState y useEffect para actualizar la interfaz y controlar la unidad seleccionada.</p>
+                        </section>
+                        <section class="case-study-card">
+                            <span class="case-study-number">04 / DESAFÍO</span>
+                            <h3>Mantener los datos y unidades coherentes</h3>
+                            <p>El reto fue encadenar la geolocalización con la consulta meteorológica y transformar correctamente la temperatura entre Kelvin, Celsius y Fahrenheit sin alterar los datos recibidos.</p>
+                        </section>
+                    </div>
+
+                    <div class="case-study-result">
+                        <div>
+                            <span class="dialog-label">Resultado</span>
+                            <p>Aplicación frontend publicada en Vercel, con una demo funcional y el código fuente disponible públicamente en GitHub.</p>
+                        </div>
+                        <span class="case-result-status"><i aria-hidden="true"></i> Demo y código disponibles</span>
                     </div>
 
                     <div class="dialog-stack">
                         <span class="dialog-label">Tecnologías</span>
-                        <ul class="tags">
-                            <li>React</li><li>JavaScript</li><li>Vite</li><li>CSS</li><li>Axios</li><li>Geolocation API</li><li>OpenWeatherMap API</li><li>Vercel</li>
-                        </ul>
+                        <div class="dialog-stack-groups">
+                            <div class="stack-group"><span>Interfaz</span><ul class="tags"><li>React</li><li>JavaScript</li><li>Vite</li><li>CSS</li></ul></div>
+                            <div class="stack-group"><span>Navegador</span><ul class="tags"><li>Geolocation API</li><li>React Hooks</li></ul></div>
+                            <div class="stack-group"><span>Integración</span><ul class="tags"><li>Axios</li><li>OpenWeatherMap API</li></ul></div>
+                            <div class="stack-group"><span>Despliegue</span><ul class="tags"><li>Vercel</li></ul></div>
+                        </div>
                     </div>
                 </div>
             </dialog>
