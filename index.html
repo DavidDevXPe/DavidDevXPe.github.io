@@ -79,7 +79,7 @@
     <header class="site-header" id="inicio">
         <nav class="nav container" aria-label="Navegación principal">
             <a class="brand" href="#inicio" aria-label="DavidDevX, ir al inicio">
-                <img src="images/daviddevx-logo.webp" alt="DavidDevX" width="640" height="237">
+                <img src="images/daviddevx-logo.webp" alt="DavidDevX" width="320" height="118">
             </a>
 
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
@@ -252,7 +252,7 @@
                 <div class="projects-grid">
                     <article class="project-card featured-project reveal">
                         <div class="project-preview project-preview-image">
-                            <img src="images/pokedex-main.webp" alt="Vista principal de Pokédex App con buscador, filtro por tipo y tarjetas de Pokémon" loading="lazy" width="1440" height="900">
+                            <img src="images/pokedex-main.webp" srcset="images/pokedex-main-900.webp 900w, images/pokedex-main.webp 1440w" sizes="(max-width: 1020px) 100vw, 800px" alt="Vista principal de Pokédex App con buscador, filtro por tipo y tarjetas de Pokémon" loading="lazy" width="1440" height="900">
                             <span class="preview-badge">Proyecto destacado</span>
                             <span class="project-number">01</span>
                         </div>
@@ -271,7 +271,7 @@
 
                     <article class="project-card featured-project featured-project-reverse reveal">
                         <div class="project-preview project-preview-image">
-                            <img src="images/rick-and-morty-main.webp" alt="Vista principal de Rick and Morty App con banner, buscador, información de Earth C-137 y tarjetas de personajes" loading="lazy" width="1440" height="1000">
+                            <img src="images/rick-and-morty-main.webp" srcset="images/rick-and-morty-main-900.webp 900w, images/rick-and-morty-main.webp 1440w" sizes="(max-width: 1020px) 100vw, 800px" alt="Vista principal de Rick and Morty App con banner, buscador, información de Earth C-137 y tarjetas de personajes" loading="lazy" width="1440" height="1000">
                             <span class="preview-badge">Explorador de ubicaciones</span>
                             <span class="project-number">02</span>
                         </div>
@@ -290,7 +290,7 @@
 
                     <article class="project-card featured-project reveal">
                         <div class="project-preview project-preview-image">
-                            <img src="images/weather-app-main.webp" alt="Vista principal de Weather App mostrando el clima de Rímac, temperatura y datos meteorológicos" loading="lazy" width="1440" height="1000">
+                            <img src="images/weather-app-main.webp" srcset="images/weather-app-main-900.webp 900w, images/weather-app-main.webp 1440w" sizes="(max-width: 1020px) 100vw, 800px" alt="Vista principal de Weather App mostrando el clima de Rímac, temperatura y datos meteorológicos" loading="lazy" width="1440" height="1000">
                             <span class="preview-badge">Clima por geolocalización</span>
                             <span class="project-number">03</span>
                         </div>
@@ -326,12 +326,12 @@
 
                     <div class="dialog-gallery pokedex-gallery">
                         <figure class="dialog-main-shot">
-                            <img src="images/pokedex-main.webp" alt="Vista principal de Pokédex App con las tarjetas de Pokémon" loading="lazy" width="1440" height="900">
+                            <img src="images/pokedex-main.webp" srcset="images/pokedex-main-900.webp 900w, images/pokedex-main.webp 1440w" sizes="(max-width: 760px) 100vw, 700px" alt="Vista principal de Pokédex App con las tarjetas de Pokémon" loading="lazy" width="1440" height="900">
                             <figcaption>Vista principal: búsqueda, filtro y resultados.</figcaption>
                         </figure>
                         <div class="dialog-side-column">
                             <figure>
-                                <img src="images/pokedex-entry.webp" alt="Pantalla inicial de Pokédex App para ingresar el nombre del entrenador" loading="lazy" width="1440" height="900">
+                                <img src="images/pokedex-entry.webp" srcset="images/pokedex-entry-900.webp 900w, images/pokedex-entry.webp 1440w" sizes="(max-width: 760px) 100vw, 350px" alt="Pantalla inicial de Pokédex App para ingresar el nombre del entrenador" loading="lazy" width="1440" height="900">
                                 <figcaption>Ingreso del entrenador.</figcaption>
                             </figure>
 
@@ -422,7 +422,7 @@
 
                     <div class="dialog-gallery single-shot">
                         <figure>
-                            <img src="images/rick-and-morty-main.webp" alt="Vista principal de Rick and Morty App mostrando Earth C-137 y sus residentes" loading="lazy" width="1440" height="1000">
+                            <img src="images/rick-and-morty-main.webp" srcset="images/rick-and-morty-main-900.webp 900w, images/rick-and-morty-main.webp 1440w" sizes="(max-width: 760px) 100vw, 700px" alt="Vista principal de Rick and Morty App mostrando Earth C-137 y sus residentes" loading="lazy" width="1440" height="1000">
                             <figcaption>Vista principal: búsqueda de ubicaciones, información y residentes paginados.</figcaption>
                         </figure>
                     </div>
@@ -493,7 +493,7 @@
 
                     <div class="dialog-gallery single-shot">
                         <figure>
-                            <img src="images/weather-app-main.webp" alt="Vista principal de Weather App con información meteorológica de Rímac" loading="lazy" width="1440" height="1000">
+                            <img src="images/weather-app-main.webp" srcset="images/weather-app-main-900.webp 900w, images/weather-app-main.webp 1440w" sizes="(max-width: 760px) 100vw, 700px" alt="Vista principal de Weather App con información meteorológica de Rímac" loading="lazy" width="1440" height="1000">
                             <figcaption>Vista principal: geolocalización, estado actual, métricas y conversión de temperatura.</figcaption>
                         </figure>
                     </div>
@@ -627,6 +627,7 @@
                 </div>
                 <div class="contact-actions">
                     <a class="button button-primary" href="mailto:hectordavidcastillobailon@gmail.com">Escribirme <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="files/David-Castillo-CV.pdf" download="David-Castillo-CV.pdf">Descargar CV</a>
                     <a class="button button-secondary" href="https://www.linkedin.com/in/david-castillo-b163412a3" target="_blank" rel="noreferrer">Ver LinkedIn</a>
                     <a class="button button-secondary" href="https://github.com/DavidDevXPe" target="_blank" rel="noreferrer">Ver GitHub</a>
                 </div>
@@ -637,7 +638,7 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <a class="brand" href="#inicio" aria-label="DavidDevX, volver al inicio">
-                <img src="images/daviddevx-logo.webp" alt="DavidDevX" width="640" height="237">
+                <img src="images/daviddevx-logo.webp" alt="DavidDevX" width="320" height="118">
             </a>
             <p>Desarrollando el futuro, una línea de código a la vez.</p>
             <div class="footer-meta">
