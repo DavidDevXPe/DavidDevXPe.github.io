@@ -1601,6 +1601,56 @@ body.dialog-open {
     font-size: 0.88rem;
 }
 
+.certifications-block {
+    margin-top: 70px;
+}
+
+.certifications-title {
+    margin: 0 0 24px;
+    color: #edf4fc;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.cert-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cert-list li {
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.02);
+    transition: border-color 220ms ease;
+}
+
+.cert-list li:hover {
+    border-color: var(--border-bright);
+}
+
+.cert-list strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text);
+    font-size: 0.85rem;
+    line-height: 1.35;
+}
+
+.cert-list span {
+    display: block;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .contact {
     padding-top: 35px;
 }
@@ -1707,7 +1757,8 @@ body.dialog-open {
 
 .footer-meta {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px 20px;
     justify-content: flex-end;
     color: #6f8096;
     font-size: 0.68rem;
@@ -1933,6 +1984,10 @@ body.dialog-open {
     .about-grid,
     .journey-grid {
         gap: 60px;
+    }
+
+    .cert-list {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tech-grid {
@@ -2181,6 +2236,14 @@ body.dialog-open {
 
     .journey-grid {
         gap: 55px;
+    }
+
+    .certifications-block {
+        margin-top: 46px;
+    }
+
+    .cert-list {
+        grid-template-columns: 1fr;
     }
 
     .contact-panel {
