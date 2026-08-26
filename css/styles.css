@@ -1388,6 +1388,26 @@ body.dialog-open {
     aspect-ratio: auto;
 }
 
+.dialog-gallery.project-gallery-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.project-gallery-pair figure {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+}
+
+.project-gallery-pair img {
+    aspect-ratio: 36 / 25;
+    background: #07111f;
+}
+
+.project-gallery-pair figcaption {
+    flex: 1;
+}
+
 .case-study-meta {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2193,6 +2213,7 @@ body.dialog-open {
     }
 
     .dialog-gallery,
+    .dialog-gallery.project-gallery-pair,
     .case-study-meta,
     .case-study-grid,
     .case-study-result {
