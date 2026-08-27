@@ -39,9 +39,9 @@ El portafolio está construido sin frameworks ni dependencias en producción. Gi
 
 | Proyecto | Descripción | Demo | Código |
 | --- | --- | --- | --- |
-| Pokédex App | Onboarding de entrenador, búsqueda, filtros, favoritos y detalles con PokeAPI. | [Abrir](https://pokedex-app-mu-livid.vercel.app/) | [Repositorio](https://github.com/DavidDevXPe/pokedex_app) |
-| Rick and Morty App | Exploración de personajes, episodios y ubicaciones mediante la API de Rick and Morty. | [Abrir](https://rick-and-morty-app-phi-green.vercel.app/) | [Repositorio](https://github.com/DavidDevXPe/Rick-and-Morty---App) |
-| ATMOS \| App del Clima | Clima por ciudad o geolocalización con React y una API Express segura. | [Abrir](https://weather-clima.vercel.app/) | [Repositorio](https://github.com/DavidDevXPe/App-Clima) |
+| Pokédex App | Onboarding de entrenador, búsqueda, filtros, favoritos y detalles con PokeAPI. | [Abrir](https://pokedex08.netlify.app/) | [Repositorio](https://github.com/DavidDevXPe/pokedex_app) |
+| Rick and Morty App | Exploración de personajes, episodios y ubicaciones mediante la API de Rick and Morty. | [Abrir](https://rickandmorty99.netlify.app/) | [Repositorio](https://github.com/DavidDevXPe/Rick-and-Morty---App) |
+| ATMOS \| App del Clima | Clima por ciudad o geolocalización con React y una API Express segura desplegada mediante Netlify Functions. | [Abrir](https://atmos-clima.netlify.app/) | [Repositorio](https://github.com/DavidDevXPe/App-Clima) |
 
 ## Estructura
 
@@ -77,7 +77,7 @@ Después visita `http://127.0.0.1:4173`.
 npm run check
 ```
 
-El comando comprueba la sintaxis de JavaScript, datos estructurados, URL canónica, sitemap, referencias locales, IDs duplicados y estructura básica del CSS.
+El comando comprueba la sintaxis de JavaScript, datos estructurados, URL canónica, sitemap, referencias locales, demos oficiales, hosts de despliegue obsoletos, IDs duplicados y estructura básica del CSS.
 
 ## Despliegue
 

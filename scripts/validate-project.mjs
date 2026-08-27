@@ -7,6 +7,11 @@ import { fileURLToPath } from 'node:url';
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
 const publicUrl = 'https://daviddevxpe.github.io/';
+const projectDemos = [
+    ['Pokédex App', 'https://pokedex08.netlify.app/'],
+    ['Rick and Morty App', 'https://rickandmorty99.netlify.app/'],
+    ['ATMOS', 'https://atmos-clima.netlify.app/']
+];
 const errors = [];
 
 const readProjectFile = (relativePath) =>
@@ -16,13 +21,14 @@ const assert = (condition, message) => {
     if (!condition) errors.push(message);
 };
 
-const [indexHtml, notFoundHtml, css, mainJavaScript, robots, sitemap] = await Promise.all([
+const [indexHtml, notFoundHtml, css, mainJavaScript, robots, sitemap, readme] = await Promise.all([
     readProjectFile('index.html'),
     readProjectFile('404.html'),
     readProjectFile('css/styles.css'),
     readProjectFile('js/main.js'),
     readProjectFile('robots.txt'),
-    readProjectFile('sitemap.xml')
+    readProjectFile('sitemap.xml'),
+    readProjectFile('README.md')
 ]);
 
 try {
@@ -58,6 +64,31 @@ assert(!sitemap.includes('daviddevx.com'), 'sitemap.xml contiene el dominio ante
 assert(robots.includes(`${publicUrl}sitemap.xml`), 'robots.txt no enlaza el sitemap público.');
 assert(sitemap.includes(`<loc>${publicUrl}</loc>`), 'sitemap.xml no contiene la URL pública.');
 assert(sitemap.includes('<urlset'), 'sitemap.xml no contiene un elemento urlset.');
+
+for (const [projectName, demoUrl] of projectDemos) {
+    const indexOccurrences = indexHtml.split(demoUrl).length - 1;
+    assert(
+        indexOccurrences >= 2,
+        `${projectName} debe enlazar su demo oficial desde la tarjeta y el caso de estudio.`
+    );
+    assert(
+        readme.includes(`](${demoUrl})`),
+        `README.md no enlaza la demo oficial de ${projectName}.`
+    );
+}
+
+assert(
+    !/\.vercel\.app/i.test(`${indexHtml}\n${readme}`),
+    'El portafolio contiene un dominio antiguo de Vercel.'
+);
+assert(
+    !/\bVercel(?: Functions)?\b/i.test(indexHtml),
+    'index.html contiene referencias de despliegue antiguas a Vercel.'
+);
+assert(
+    !/<div\b(?=[^>]*\baria-label=)(?![^>]*\brole=)[^>]*>/i.test(indexHtml),
+    'index.html contiene un div con aria-label pero sin un rol semántico.'
+);
 
 for (const [name, document] of [
     ['index.html', indexHtml],
@@ -106,6 +137,7 @@ if (errors.length > 0) {
 } else {
     console.log('✓ JavaScript válido');
     console.log('✓ SEO y datos estructurados correctos');
+    console.log(`✓ ${projectDemos.length} demos oficiales configuradas en Netlify`);
     console.log(`✓ ${localReferences.size} recursos locales disponibles`);
     console.log('✓ IDs únicos y CSS balanceado');
     console.log('\nEl portafolio está listo para publicarse.');
