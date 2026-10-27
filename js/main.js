@@ -1,6 +1,7 @@
 const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.nav-menu');
+const menuBackdrop = document.querySelector('.menu-backdrop');
 const navLinks = document.querySelectorAll('.nav-menu a');
 const year = document.querySelector('#current-year');
 const menuLabel = toggle?.querySelector('[data-menu-label]');
@@ -14,6 +15,7 @@ const setMenuState = (isOpen) => {
 
     toggle.setAttribute('aria-expanded', String(isOpen));
     menu.classList.toggle('is-open', isOpen);
+    if (menuBackdrop) menuBackdrop.hidden = !isOpen;
     document.body.classList.toggle('menu-open', isOpen);
     if (menuLabel) menuLabel.textContent = isOpen ? 'Cerrar menú' : 'Abrir menú';
 };
@@ -28,6 +30,7 @@ toggle?.addEventListener('click', () => {
 });
 
 navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+menuBackdrop?.addEventListener('click', closeMenu);
 
 if (header) {
     const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 24);

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daviddevxpe.github.io/sitemap.xml
+Sitemap: https://portafoliodaviddevx.netlify.app/sitemap.xml

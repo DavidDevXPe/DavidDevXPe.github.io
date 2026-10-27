@@ -2062,17 +2062,36 @@ body.dialog-open {
         position: fixed;
         top: 0;
         right: 0;
+        z-index: 101;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         width: min(84vw, 360px);
         height: 100vh;
+        height: 100dvh;
         padding: 80px 38px;
-        background: rgba(8, 20, 36, 0.98);
+        background: rgba(8, 20, 36, 0.995);
         box-shadow: -20px 0 60px rgba(0, 0, 0, 0.35);
         transform: translateX(105%);
         transition: transform 260ms ease;
+    }
+
+    .menu-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: 0;
+        background: rgba(2, 7, 15, 0.82);
+        cursor: pointer;
+    }
+
+    .menu-backdrop[hidden] {
+        display: none;
     }
 
     .nav-menu.is-open {
@@ -2105,8 +2124,14 @@ body.dialog-open {
         font-size: 1rem;
     }
 
+    .nav-menu a:not(.nav-cta) {
+        width: 100%;
+        padding-block: 10px;
+    }
+
     body.menu-open {
         overflow: hidden;
+        overscroll-behavior: none;
     }
 
     .hero {
@@ -2159,6 +2184,10 @@ body.dialog-open {
     .values-grid {
         grid-template-columns: 1fr;
         margin-top: 58px;
+    }
+
+    .about .values-grid {
+        margin-top: 38px;
     }
 
     .value-card {
@@ -2272,6 +2301,10 @@ body.dialog-open {
         padding: 42px 28px;
     }
 
+    .contact {
+        padding-bottom: 42px;
+    }
+
     .contact-panel .button {
         justify-self: start;
     }
@@ -2281,7 +2314,7 @@ body.dialog-open {
     }
 
     .site-footer {
-        margin-top: 70px;
+        margin-top: 32px;
     }
 
     .footer-content {

@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, '..');
-const publicUrl = 'https://daviddevxpe.github.io/';
+const publicUrl = 'https://portafoliodaviddevx.netlify.app/';
 const projectDemos = [
     ['Pokédex App', 'https://pokedex08.netlify.app/'],
     ['Rick and Morty App', 'https://rickandmorty99.netlify.app/'],

@@ -5,7 +5,7 @@
 
   Un portafolio web estático, responsive y accesible para presentar mi perfil, tecnologías y proyectos como desarrollador web.
 
-  [Ver portafolio](https://daviddevxpe.github.io/) · [GitHub](https://github.com/DavidDevXPe) · [Contacto](mailto:hectordavidcastillobailon@gmail.com)
+  [Ver portafolio](https://portafoliodaviddevx.netlify.app/) · [GitHub](https://github.com/DavidDevXPe) · [Contacto](mailto:hectordavidcastillobailon@gmail.com)
 </div>
 
 ![Vista social del portafolio DavidDevX](images/og-image.png)
@@ -14,7 +14,7 @@
 
 Este sitio reúne mi trayectoria desde Ingeniería de Industrias Alimentarias hacia el desarrollo web. La interfaz utiliza la identidad visual DavidDevX y presenta proyectos reales mediante demos, repositorios y casos de estudio breves.
 
-El portafolio está construido sin frameworks ni dependencias en producción. GitHub Pages sirve directamente los archivos HTML, CSS, JavaScript e imágenes optimizadas.
+El portafolio está construido sin frameworks ni dependencias en producción. La URL oficial de referencia es `https://portafoliodaviddevx.netlify.app/`; la conexión entre Netlify y este repositorio se gestiona fuera del código y debe verificarse en la configuración del servicio.
 
 ## Características
 
@@ -32,7 +32,7 @@ El portafolio está construido sin frameworks ni dependencias en producción. Gi
 - HTML5
 - CSS3
 - JavaScript
-- Git y GitHub Pages
+- Git y GitHub como repositorio
 - Node.js únicamente para las herramientas locales de desarrollo
 
 ## Proyectos destacados
@@ -81,7 +81,7 @@ El comando comprueba la sintaxis de JavaScript, datos estructurados, URL canóni
 
 ## Despliegue
 
-El sitio se publica desde la rama `main` mediante GitHub Pages. Cada cambio aprobado se despliega con:
+La URL oficial del sitio es `https://portafoliodaviddevx.netlify.app/`. Este repositorio no contiene configuración suficiente para confirmar qué sitio de Netlify está conectado a la rama `main`; esa relación debe verificarse en Netlify. Los cambios aprobados se versionan con:
 
 ```bash
 git add .
